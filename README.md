@@ -1,6 +1,8 @@
 # SumCoinbase 
+![alt text](/img/preview.png "Preview script")
 
-###Installing
+### Installing
+
 #### Termux
 1. `pkg update && pkg upgrade`
 2. `pkg install php`
