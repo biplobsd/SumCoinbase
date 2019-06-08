@@ -19,7 +19,8 @@ $banner = "\n
   \___ \| | | | '_ ` _ \  | |    / _ \| | '_ \| '_ \ / _` / __|/ _ \
   ____) | |_| | | | | | | | |___| (_) | | | | | |_) | (_| \__ \  __/
  |_____/ \__,_|_| |_| |_|  \_____\___/|_|_| |_|_.__/ \__,_|___/\___|
----------------------------------------------------Dev-by-Alph4D----
+---------------------------------------------------Dev-by-Biplob_SD----
+github.com/biplobsd/SumCoinbase
 \n";
 
 
@@ -28,11 +29,11 @@ if(isset($sendToM) || isset($keyV)){
 }else{
 	echo $banner;
 	echo "error : \n";
-	exit("Remove '//' in ids.php file before start this script! and also add your ids api key,secret key and which id do you want send all coin add this. --Alph4D(githube/biplobsd)\n\n");
+	exit("Remove '//' in ids.php file before start this script! and also add your ids api key,secret key and which id do you want send all coin add this. --(githube/biplobsd)\n\n");
 }
 
 echo $banner;
-echo "Your total account : ".sizeof($keyV).'\n';
+echo "Your total account : ".sizeof($keyV)."\n";
 
 
 $totalAmound = array();
@@ -108,14 +109,14 @@ foreach($keyV as $n => $f){
 
     echo "\nTotal money IDs was : ".sizeof($tgt)."\n\n";
 }
-echo 'Total Earn : - \n';
+echo "Total Earn : - \n";
 file_put_contents('activelogs.txt','Total Earn : - '."\n", FILE_APPEND);
 foreach($totalAmound as $name => $valu){
-    echo $name.' : '.sprintf('%.8F', $valu).'\n';
-    file_put_contents('activelogs.txt',$name.' : '.sprintf('%.8F', $valu).' '.'\n', FILE_APPEND);
+    echo $name.' : '.sprintf('%.8F', $valu)."\n";
+    file_put_contents('activelogs.txt',$name.' : '.sprintf('%.8F', $valu).' '."\n", FILE_APPEND);
 }
 echo "All Done";
-file_put_contents('activelogs.txt','\nEnded  :  '.date("Y-m-d h:i:s")."\n", FILE_APPEND);
+file_put_contents('activelogs.txt',"\nEnded  :  ".date("Y-m-d h:i:s")."\n", FILE_APPEND);
 
 
 
